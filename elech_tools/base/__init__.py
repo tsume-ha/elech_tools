@@ -1,1 +1,1 @@
-from .data import BaseData, DataFileValidationException
+from .data import BaseData, DataValidationException
