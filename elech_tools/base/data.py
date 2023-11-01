@@ -2,8 +2,8 @@ import pandas as pd
 
 
 class BaseData:
-    def __init__(self, filePath) -> None:
-        self.filePath: str = filePath
+    def __init__(self, file_path) -> None:
+        self.file_path: str = file_path
         self.df: pd.DataFrame = None
 
         self.load()
