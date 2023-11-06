@@ -6,7 +6,10 @@ class BaseData:
         self.file_path: str = file_path
         self.df: pd.DataFrame = None
 
-        self.load()
+        try:
+            self.load()
+        except Exception as e:
+            raise DataValidationException(e)
         self.validate()
 
     def load(self):
