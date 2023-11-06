@@ -23,7 +23,7 @@ data = get_GCDData(file_path=path)
 analyser = GCDAnalyser(data)
 
 fig, ax = plt.subplots()
-ax = analyser.plot_charge_discharge(ax=ax, cycle=i + 1, mode="Discharge")
+ax = analyser.plot_charge_discharge(ax=ax, cycle=1, mode="Discharge")
 fig.show()
 ```
 
