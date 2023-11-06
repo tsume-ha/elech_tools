@@ -4,7 +4,8 @@ import io
 
 import numpy as np
 import pandas as pd
-from base import BaseData, DataValidationException
+
+from ..base import BaseData, DataValidationException
 
 
 class GCDData(BaseData):
